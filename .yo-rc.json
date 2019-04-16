@@ -1,0 +1,35 @@
+{
+    "generator-jhipster": {
+        "promptValues": {
+            "packageName": "com.exam2"
+        },
+        "jhipsterVersion": "5.8.2",
+        "applicationType": "monolith",
+        "baseName": "jhipsterExam",
+        "packageName": "com.exam2",
+        "packageFolder": "com/exam2",
+        "serverPort": "8080",
+        "authenticationType": "jwt",
+        "cacheProvider": "ehcache",
+        "enableHibernateCache": false,
+        "websocket": false,
+        "databaseType": "sql",
+        "devDatabaseType": "mysql",
+        "prodDatabaseType": "mysql",
+        "searchEngine": false,
+        "messageBroker": false,
+        "serviceDiscoveryType": false,
+        "buildTool": "maven",
+        "enableSwaggerCodegen": false,
+        "jwtSecretKey": "MmFiM2Y5NTVmNDhiMzYyODYyYjdmNDQ5MDE5YTRjZmNmMzI4NTkxN2M4MmU4MWM5MGZjZTZkZDQxODRjODg4ZjllYjU5NjIxNmIwYTBlOTQ3NWM3ZTNlNmEyYzMwMzAwZmUzZTRmZjE1Nzc4Zjg3YjQwMWQ3ZmUzM2E1NTIzMDQ=",
+        "clientFramework": "angularX",
+        "useSass": false,
+        "clientPackageManager": "npm",
+        "testFrameworks": [],
+        "jhiPrefix": "jhi",
+        "entitySuffix": "",
+        "dtoSuffix": "DTO",
+        "otherModules": [],
+        "enableTranslation": false
+    }
+}
