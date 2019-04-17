@@ -58,14 +58,14 @@
                     <label class="form-control-label" for="field_team">Team</label>
                     <select class="form-control" id="field_team" name="team" [(ngModel)]="student.team" >
                         <option [ngValue]="null"></option>
-                        <option [ngValue]="teamOption.id === student.team?.id ? student.team : teamOption" *ngFor="let teamOption of teams; trackBy: trackTeamById">{{teamOption.id}}</option>
+                        <option [ngValue]="teamOption.id === student.team?.id ? student.team : teamOption" *ngFor="let teamOption of teams; trackBy: trackTeamById">{{teamOption.name}}</option>
                     </select>
                 </div>
                 <div class="form-group">
                     <label class="form-control-label" for="field_story">Story</label>
                     <select class="form-control" id="field_story" name="story" [(ngModel)]="student.story" >
                         <option [ngValue]="null"></option>
-                        <option [ngValue]="storyOption.id === student.story?.id ? student.story : storyOption" *ngFor="let storyOption of stories; trackBy: trackStoryById">{{storyOption.id}}</option>
+                        <option [ngValue]="storyOption.id === student.story?.id ? student.story : storyOption" *ngFor="let storyOption of stories; trackBy: trackStoryById">{{storyOption.name}}</option>
                     </select>
                 </div>
             </div>

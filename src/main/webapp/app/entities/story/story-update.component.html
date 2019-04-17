@@ -58,7 +58,7 @@
                     <label class="form-control-label" for="field_sprint">Sprint</label>
                     <select class="form-control" id="field_sprint" name="sprint" [(ngModel)]="story.sprint" >
                         <option [ngValue]="null"></option>
-                        <option [ngValue]="sprintOption.id === story.sprint?.id ? story.sprint : sprintOption" *ngFor="let sprintOption of sprints; trackBy: trackSprintById">{{sprintOption.id}}</option>
+                        <option [ngValue]="sprintOption.id === story.sprint?.id ? story.sprint : sprintOption" *ngFor="let sprintOption of sprints; trackBy: trackSprintById">{{sprintOption.name}}</option>
                     </select>
                 </div>
             </div>

@@ -36,7 +36,7 @@
                     <label class="form-control-label" for="field_project">Project</label>
                     <select class="form-control" id="field_project" name="project" [(ngModel)]="team.project" >
                         <option [ngValue]="null"></option>
-                        <option [ngValue]="projectOption.id === team.project?.id ? team.project : projectOption" *ngFor="let projectOption of projects; trackBy: trackProjectById">{{projectOption.id}}</option>
+                        <option [ngValue]="projectOption.id === team.project?.id ? team.project : projectOption" *ngFor="let projectOption of projects; trackBy: trackProjectById">{{projectOption.name}}</option>
                     </select>
                 </div>
             </div>

@@ -36,14 +36,14 @@
             "otherEntityName": "team",
             "otherEntityRelationshipName": "student",
             "relationshipName": "team",
-            "otherEntityField": "id"
+            "otherEntityField": "name"
         },
         {
             "relationshipType": "many-to-one",
             "otherEntityName": "story",
             "otherEntityRelationshipName": "student",
             "relationshipName": "story",
-            "otherEntityField": "id"
+            "otherEntityField": "name"
         }
     ],
     "changelogDate": "20190417000912",

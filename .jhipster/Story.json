@@ -36,7 +36,7 @@
             "otherEntityName": "sprint",
             "otherEntityRelationshipName": "story",
             "relationshipName": "sprint",
-            "otherEntityField": "id"
+            "otherEntityField": "name"
         }
     ],
     "changelogDate": "20190417000914",

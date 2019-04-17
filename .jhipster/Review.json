@@ -29,7 +29,7 @@
             "otherEntityName": "story",
             "otherEntityRelationshipName": "review",
             "relationshipName": "story",
-            "otherEntityField": "id"
+            "otherEntityField": "name"
         }
     ],
     "changelogDate": "20190417000915",

@@ -28,7 +28,7 @@
                 <td>{{team.status}}</td>
                 <td>
                     <div *ngIf="team.project">
-                        <a [routerLink]="['../project', team.project?.id, 'view' ]" >{{team.project?.id}}</a>
+                        <a [routerLink]="['../project', team.project?.id, 'view' ]" >{{team.project?.name}}</a>
                     </div>
                 </td>
                 <td class="text-right">

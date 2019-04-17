@@ -32,7 +32,7 @@
                 <td>{{sprint.status}}</td>
                 <td>
                     <div *ngIf="sprint.team">
-                        <a [routerLink]="['../team', sprint.team?.id, 'view' ]" >{{sprint.team?.id}}</a>
+                        <a [routerLink]="['../team', sprint.team?.id, 'view' ]" >{{sprint.team?.name}}</a>
                     </div>
                 </td>
                 <td class="text-right">

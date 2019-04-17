@@ -22,7 +22,7 @@
             "otherEntityName": "project",
             "otherEntityRelationshipName": "team",
             "relationshipName": "project",
-            "otherEntityField": "id"
+            "otherEntityField": "name"
         }
     ],
     "changelogDate": "20190417000911",

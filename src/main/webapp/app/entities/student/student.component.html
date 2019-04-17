@@ -33,12 +33,12 @@
                 <td>{{student.status}}</td>
                 <td>
                     <div *ngIf="student.team">
-                        <a [routerLink]="['../team', student.team?.id, 'view' ]" >{{student.team?.id}}</a>
+                        <a [routerLink]="['../team', student.team?.id, 'view' ]" >{{student.team?.name}}</a>
                     </div>
                 </td>
                 <td>
                     <div *ngIf="student.story">
-                        <a [routerLink]="['../story', student.story?.id, 'view' ]" >{{student.story?.id}}</a>
+                        <a [routerLink]="['../story', student.story?.id, 'view' ]" >{{student.story?.name}}</a>
                     </div>
                 </td>
                 <td class="text-right">

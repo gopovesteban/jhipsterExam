@@ -24,7 +24,7 @@
                 <dt><span>Period</span></dt>
                 <dd>
                     <div *ngIf="project.period">
-                        <a [routerLink]="['/period', project.period?.id, 'view']">{{project.period?.id}}</a>
+                        <a [routerLink]="['/period', project.period?.id, 'view']">{{project.period?.name}}</a>
                     </div>
                 </dd>
             </dl>

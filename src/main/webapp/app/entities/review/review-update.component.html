@@ -53,7 +53,7 @@
                     <label class="form-control-label" for="field_story">Story</label>
                     <select class="form-control" id="field_story" name="story" [(ngModel)]="review.story" >
                         <option [ngValue]="null"></option>
-                        <option [ngValue]="storyOption.id === review.story?.id ? review.story : storyOption" *ngFor="let storyOption of stories; trackBy: trackStoryById">{{storyOption.id}}</option>
+                        <option [ngValue]="storyOption.id === review.story?.id ? review.story : storyOption" *ngFor="let storyOption of stories; trackBy: trackStoryById">{{storyOption.name}}</option>
                     </select>
                 </div>
             </div>

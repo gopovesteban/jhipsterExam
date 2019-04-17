@@ -32,7 +32,7 @@
                 <td>{{project.status}}</td>
                 <td>
                     <div *ngIf="project.period">
-                        <a [routerLink]="['../period', project.period?.id, 'view' ]" >{{project.period?.id}}</a>
+                        <a [routerLink]="['../period', project.period?.id, 'view' ]" >{{project.period?.name}}</a>
                     </div>
                 </td>
                 <td class="text-right">

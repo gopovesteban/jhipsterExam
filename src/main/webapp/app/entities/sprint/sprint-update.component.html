@@ -70,7 +70,7 @@
                     <label class="form-control-label" for="field_team">Team</label>
                     <select class="form-control" id="field_team" name="team" [(ngModel)]="sprint.team" >
                         <option [ngValue]="null"></option>
-                        <option [ngValue]="teamOption.id === sprint.team?.id ? sprint.team : teamOption" *ngFor="let teamOption of teams; trackBy: trackTeamById">{{teamOption.id}}</option>
+                        <option [ngValue]="teamOption.id === sprint.team?.id ? sprint.team : teamOption" *ngFor="let teamOption of teams; trackBy: trackTeamById">{{teamOption.name}}</option>
                     </select>
                 </div>
             </div>

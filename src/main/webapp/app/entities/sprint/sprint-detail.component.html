@@ -24,7 +24,7 @@
                 <dt><span>Team</span></dt>
                 <dd>
                     <div *ngIf="sprint.team">
-                        <a [routerLink]="['/team', sprint.team?.id, 'view']">{{sprint.team?.id}}</a>
+                        <a [routerLink]="['/team', sprint.team?.id, 'view']">{{sprint.team?.name}}</a>
                     </div>
                 </dd>
             </dl>
