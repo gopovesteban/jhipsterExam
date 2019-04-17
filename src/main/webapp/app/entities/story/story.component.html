@@ -1,0 +1,66 @@
+<div>
+    <h2 id="page-heading">
+        <span>Stories</span>
+        <button id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-story" [routerLink]="['/story/new']">
+            <fa-icon [icon]="'plus'"></fa-icon>
+            <span >
+            Create new Story
+            </span>
+        </button>
+    </h2>
+    <jhi-alert></jhi-alert>
+    <br/>
+    <div class="table-responsive" *ngIf="stories">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+            <th><span>ID</span></th>
+            <th><span>Code</span></th>
+            <th><span>Name</span></th>
+            <th><span>Description</span></th>
+            <th><span>Status</span></th>
+            <th><span>Sprint</span></th>
+            <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let story of stories ;trackBy: trackId">
+                <td><a [routerLink]="['/story', story.id, 'view' ]">{{story.id}}</a></td>
+                <td>{{story.code}}</td>
+                <td>{{story.name}}</td>
+                <td>{{story.description}}</td>
+                <td>{{story.status}}</td>
+                <td>
+                    <div *ngIf="story.sprint">
+                        <a [routerLink]="['../sprint', story.sprint?.id, 'view' ]" >{{story.sprint?.id}}</a>
+                    </div>
+                </td>
+                <td class="text-right">
+                    <div class="btn-group flex-btn-group-container">
+                        <button type="submit"
+                                [routerLink]="['/story', story.id, 'view' ]"
+                                class="btn btn-info btn-sm">
+                            <fa-icon [icon]="'eye'"></fa-icon>
+                            <span class="d-none d-md-inline">View</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/story', story.id, 'edit']"
+                                class="btn btn-primary btn-sm">
+                            <fa-icon [icon]="'pencil-alt'"></fa-icon>
+                            <span class="d-none d-md-inline">Edit</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/', 'story', { outlets: { popup: story.id + '/delete'} }]"
+                                replaceUrl="true"
+                                queryParamsHandling="merge"
+                                class="btn btn-danger btn-sm">
+                            <fa-icon [icon]="'times'"></fa-icon>
+                            <span class="d-none d-md-inline">Delete</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

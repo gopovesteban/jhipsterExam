@@ -1,0 +1,66 @@
+entity Period {
+	startDate ZonedDateTime required,
+    endDate ZonedDateTime required,
+    name String required
+}
+
+entity Project {
+	name String required,
+    numStudent Integer required,
+    schedule String required,
+    status String required
+}
+
+entity Team {
+	name String required,
+    status String required
+}
+
+entity Student {
+	name String required,
+    lastName String required,
+    role String required,
+    status String required
+}
+
+
+entity Sprint {
+	name String required,
+    endDate ZonedDateTime required,
+    startDate ZonedDateTime required,
+    status String required
+}
+
+entity Story {
+	code String required,
+    name String required,
+    description String required,
+    status String required
+    
+}
+
+entity Review {
+   timeStamp ZonedDateTime required,
+   comment String required,
+   status String required
+}
+
+relationship ManyToOne {
+	Project{period} to Period,
+    Team{project} to Project,
+    Student{team} to Team,
+    Sprint{team} to Team,
+   	Story{sprint} to Sprint,
+    Review{story} to Story,
+    Student{story} to Story
+}
+
+// Set pagination options
+
+// Use Data Transfert Objects (DTO)
+// dto * with mapstruct
+
+// Set service options to all except few
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
